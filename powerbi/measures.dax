@@ -1,0 +1,47 @@
+Cohort Patients =
+CALCULATE(
+    MAX(CohortSummary[value]),
+    CohortSummary[metric] = "patients"
+)
+
+One-Year Survivors =
+CALCULATE(
+    MAX(CohortSummary[value]),
+    CohortSummary[metric] = "survived_1yr"
+)
+
+Deaths Within One Year =
+CALCULATE(
+    MAX(CohortSummary[value]),
+    CohortSummary[metric] = "died_within_1yr"
+)
+
+Observed One-Year Survival % =
+CALCULATE(
+    MAX(CohortSummary[value]),
+    CohortSummary[metric] = "observed_1yr_survival_pct"
+)
+
+Average Feature Missingness % =
+CALCULATE(
+    MAX(CohortSummary[value]),
+    CohortSummary[metric] = "feature_missing_pct"
+)
+
+Mean CV ROC-AUC =
+CALCULATE(
+    MAX(ModelCVSummary[mean]),
+    ModelCVSummary[metric] = "roc_auc"
+)
+
+Mean CV Brier Score =
+CALCULATE(
+    MAX(ModelCVSummary[mean]),
+    ModelCVSummary[metric] = "brier_score"
+)
+
+CV ROC-AUC SD =
+CALCULATE(
+    MAX(ModelCVSummary[std]),
+    ModelCVSummary[metric] = "roc_auc"
+)

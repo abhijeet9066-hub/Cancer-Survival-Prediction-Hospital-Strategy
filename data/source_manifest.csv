@@ -1,0 +1,10 @@
+asset,layer,source_or_derivation,status,notes
+data/raw/hcc_survival_uci.csv,raw,UCI HCC Survival dataset 423,generated,"Canonical 165-row public clinical snapshot"
+data/raw/source_metadata.json,raw,src/01_extract_uci_hcc.py,generated,"Source URLs, retrieval mode, SHA-256 and fixed cohort checks"
+data/processed/cohort_summary.csv,processed,src/02_build_analytics.py,generated,"Cohort and one-year outcome counts"
+data/processed/feature_missingness.csv,processed,src/02_build_analytics.py,generated,"Feature-level missingness"
+data/processed/subgroup_outcomes.csv,processed,src/02_build_analytics.py,generated,"Aggregate descriptive subgroup outcomes"
+data/processed/model_cv_fold_metrics.csv,model,src/03_train_validate_model.py,generated,"50 held-out repeated-CV fold metrics"
+data/processed/model_cv_summary.csv,model,src/03_train_validate_model.py,generated,"Metric mean/SD/min/max"
+data/processed/model_coefficients.csv,model,src/03_train_validate_model.py,generated,"Full-cohort standardized logistic coefficients"
+data/processed/cancer_survival.sqlite,warehouse,src/04_build_sqlite.py,generated,"SQLite analytical warehouse"

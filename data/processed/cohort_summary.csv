@@ -1,0 +1,9 @@
+metric,value
+patients,165.0
+clinical_features,49.0
+survived_1yr,102.0
+died_within_1yr,63.0
+observed_1yr_survival_pct,61.81818181818181
+feature_missing_cells,826.0
+feature_missing_pct,10.216450216450216
+complete_patient_rows,8.0

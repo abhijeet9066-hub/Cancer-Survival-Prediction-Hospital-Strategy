@@ -1,0 +1,23 @@
+{
+  "project": "HCC One-Year Survival Analytics",
+  "repository_continuity_name": "Cancer-Survival-Prediction-Hospital-Strategy",
+  "uci_dataset_id": 423,
+  "uci_dataset_name": "HCC Survival",
+  "uci_dataset_page": "https://archive.ics.uci.edu/dataset/423/hcc+survival",
+  "uci_zip_url": "https://archive.ics.uci.edu/static/public/423/hcc%2Bsurvival.zip",
+  "uci_doi": "10.24432/C5TS4S",
+  "license": "CC BY 4.0",
+  "expected_rows": 165,
+  "expected_features": 49,
+  "expected_survived_1yr": 102,
+  "expected_died_within_1yr": 63,
+  "target": "survival_1yr",
+  "target_encoding": {
+    "0": "died within 1 year",
+    "1": "survived 1 year"
+  },
+  "cv_folds": 5,
+  "cv_repeats": 10,
+  "random_state": 42,
+  "model": "L2-regularized logistic regression"
+}

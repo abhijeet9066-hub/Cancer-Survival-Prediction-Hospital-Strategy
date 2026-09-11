@@ -1,0 +1,23 @@
+{
+  "project": "HCC One-Year Survival Analytics",
+  "uci_dataset_id": 423,
+  "uci_dataset_name": "HCC Survival",
+  "uci_dataset_page": "https://archive.ics.uci.edu/dataset/423/hcc+survival",
+  "uci_zip_url": "https://archive.ics.uci.edu/static/public/423/hcc%2Bsurvival.zip",
+  "doi": "10.24432/C5TS4S",
+  "license": "CC BY 4.0",
+  "retrieved_at_utc": "2026-09-11T10:01:45.039385+00:00",
+  "retrieval_mode": "official UCI ZIP",
+  "official_zip_error_if_fallback": null,
+  "zip_sha256": "56a0aa7082be85af1af14602f75d438cae02f029207ae861ef03fbc44d4f6e8a",
+  "raw_hcc_data_sha256": "f65040b1ab342154600ec6781021f83ae419782e24831cc403b7469115c7c606",
+  "canonical_csv_sha256": "e69ed76e2e58d4d145fb8a0246229f550063488a6dbc1c94b14df53a5beee8e2",
+  "rows": 165,
+  "features": 49,
+  "survived_1yr": 102,
+  "died_within_1yr": 63,
+  "total_feature_missing_cells": 826,
+  "total_feature_cells": 8085,
+  "synthetic_data": false,
+  "interpretation": "Binary one-year survival outcome in a historical 165-patient HCC cohort. Not a time-to-event dataset and not clinically validated for real-patient use."
+}

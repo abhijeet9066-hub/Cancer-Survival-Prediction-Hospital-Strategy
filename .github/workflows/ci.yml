@@ -1,0 +1,31 @@
+name: Portfolio CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install analytics dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Rebuild descriptive analytics
+        run: python src/02_build_analytics.py
+      - name: Rebuild repeated-CV model evaluation
+        run: python src/03_train_validate_model.py
+      - name: Rebuild SQLite warehouse
+        run: python src/04_build_sqlite.py
+      - name: Rebuild Power BI exports
+        run: python src/05_export_powerbi.py
+      - name: Validate repository
+        run: python src/validate_repo.py
