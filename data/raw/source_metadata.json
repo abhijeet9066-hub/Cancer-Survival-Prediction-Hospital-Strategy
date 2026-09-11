@@ -11,7 +11,7 @@
   "official_zip_error_if_fallback": null,
   "zip_sha256": "56a0aa7082be85af1af14602f75d438cae02f029207ae861ef03fbc44d4f6e8a",
   "raw_hcc_data_sha256": "f65040b1ab342154600ec6781021f83ae419782e24831cc403b7469115c7c606",
-  "canonical_csv_sha256": "e69ed76e2e58d4d145fb8a0246229f550063488a6dbc1c94b14df53a5beee8e2",
+  "canonical_csv_sha256": "1f7441cfdd13797b1a1c4c0c53f9f176e599d414106f2f2e7ae3ab6767443c63",
   "rows": 165,
   "features": 49,
   "survived_1yr": 102,
